@@ -1,0 +1,375 @@
+ <!-- porfolio projet -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Portfolio</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Renuka Devi</span></a>
+        <nav class="navbar">
+            <a href="#" class="active">Portfolio</a>
+            <a href="#education">Education</a>
+            <a href="#resume">Resume</a>
+            <a href="#projects">Projects</a>
+        </nav>
+        <a href="#contact" class="contact">Contact</a>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home">
+        <div class="home-content">
+            <h3>Hi</h3>
+            <h1>I'm <span>Renuka Devi</span>, a Python Developer</h1>
+            <p>Motivated and detail-oriented, eager to contribute technical expertise and problem-solving skills to real-world projects. Passionate about leveraging Python for developing innovative solutions and gaining hands-on experience in software development.</p>
+            <div class="btn-box">
+                <button class="btn-1">Hire Me</button>
+                <button class="btn-2">Fresher</button>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="C:\Users\User\Downloads\20250411_214144.jpg" alt="text">
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <h2>🎓 Education</h2>
+
+        <div class="education-item">
+            <h3>Bachelor of Technology in Electrical and Electronics</h3>
+            <p>JNTU University, Prakasam</p>
+            <p><em>Graduated: 2011</em></p>
+            <ul>
+                <li>Relevant coursework: C Programming, Web Development</li>
+            </ul>
+        </div>
+
+        <div class="education-item">
+            <h3>Higher Secondary Education (12th Grade)</h3>
+            <p>BAPATLA Jr. College, Bapatla</p>
+            <p><em>Completed: 2006</em></p>
+        </div>
+
+        <div class="education-item">
+            <h3>Secondary Education (10th Grade)</h3>
+            <p>Jack and Jill Public School, City</p>
+            <p><em>Completed: 2004</em></p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>💼 Projects</h2>
+
+        <div class="project-item">
+            <h3>Weather Forecast App</h3>
+            <p>Built a simple weather app using Flask and OpenWeather API to display real-time weather updates.</p>
+        </div>
+
+        <div class="project-item">
+            <h3>Library Management System (Python)</h3>
+            <p>Developed a command-line application to manage library operations such as issuing books, tracking borrowers, and maintaining inventory. Used file handling for storing and retrieving records.</p>
+        </div>
+        <div class="project-item">
+            <h3>Data Analysis on sales Dataset (Python& Excel)</h3>
+                <p>Analyzed large sales data using Python (Pandas, NumPy) and Microsoft Excel for comparative analysis.</p>
+                <p>Created visualizations using Matplotlib and Excel charts to uncover insights and trends.</p>
+                
+                
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <h2>📄 Resume</h2>
+        <a href="RenukaDevi_Resume.pdf" download class="resume-btn">Download Resume</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>📬 Contact</h2>
+        <ul>
+            <li><i class='bx bx-envelope'></i> pothurirenu90@gmail.com</li>
+            <li><i class='bx bxl-linkedin'></i> linkedin.com/in/renukadevipothuri</li>
+            <li><i class='bx bxl-github'></i> <a href="https://github.com/renukabhanu" target="_blank">github.com/renukabhanu</a></li>
+            <li><i class='bx bxl-instagram'></i><a href="https://www.instagram.com/renukabhanu37" target="_blank">instagram.com/renukabhanu37</a></li>
+  
+            <li><i class='bx bx-phone'></i> +91 76618 81137</li>
+            <li><i class='bx bx-map'></i> Toronto, Canada</li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 Renuka Devi. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="https://github.com/your-renukabhanu" target="_blank"><i class='bx bxl-github'></i></a>
+          <a href="https://linkedin.com/in/renukadevipothuri" target="_blank"><i class='bx bxl-linkedin'></i></a>
+          <a href="mailto:pothurirenu90@gmail.com"><i class='bx bx-envelope'></i></a>
+          <a href="https://www.instagram.com/renukabhanu37" target="_blank"><i class='bx bxl-instagram'></i></a>
+        </div>
+      </footer>
+      
+</body>
+</html>
+ <!-- styling css -->
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header */
+.header {
+  background-color: #343a40;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar a {
+  margin-left: 20px;
+  color: #ddd;
+  transition: color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #00bcd4;
+}
+
+.contact {
+  background: #00bcd4;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Home Section */
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  background-color: #fff;
+}
+
+.home-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.home-content span {
+  color: #00bcd4;
+}
+
+.home-content p {
+  margin: 20px 0;
+  font-size: 1.1rem;
+}
+
+.img-box {
+  flex: 1;
+  text-align: center;
+}
+
+.img-box img {
+  max-width: 300px;
+  border-radius: 50%;
+  border: 5px solid #00bcd4;
+}
+
+/* Buttons */
+.btn-box {
+  margin-top: 20px;
+}
+
+.btn-1,
+.btn-2 {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn-1 {
+  background-color: #00bcd4;
+  color: white;
+}
+
+.btn-1:hover {
+  background-color: #0097a7;
+}
+
+.btn-2 {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.btn-2:hover {
+  background-color: #ccc;
+}
+
+/* Section Headings */
+section {
+  padding: 50px 40px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+/* Education & Projects */
+.education-item,
+.project-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #ffffff;
+  border-left: 5px solid #007bff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.education-item h3,
+.project-item h3 {
+  margin-bottom: 10px;
+}
+
+/* Resume Button */
+.Resume {
+    text-align: center;
+  }
+  
+.resume-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+  
+}
+
+.resume-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+  }
+  
+  .contact-section ul {
+    margin-top: 20px;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+  }
+
+.contact-section li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.contact-section i {
+  color: #00bcd4;
+  margin-right: 10px;
+}
+.contact-section a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact-section a:hover {
+    text-decoration: underline;
+  }
+  
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img-box img {
+    max-width: 200px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+  .footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+   
+  
+}
